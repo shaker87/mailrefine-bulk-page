@@ -1,0 +1,414 @@
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 479px) {
+    /* Navigation Area Style Start Here */
+    .menu .menu-item {
+        padding: 0px 0px 10px 0px;
+    }
+    .menu .menu-item a {
+        padding: 10px 25px;
+        font-size: 15px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    .user-img {
+        margin-left: 10px;
+    }
+    .user-name {
+        color: #fff;
+    }
+    .header-box {
+        height: 47px;
+        width: 100%;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    .header-box h6 {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    .header-box h6 span {
+        display: block;
+        font-size: 11px;
+        color: rgba(57, 57, 57, 1);
+        font-weight: 400;
+        margin-top: 2px;
+    }
+    .plan-menu {
+        z-index: 999999;
+    }
+    .plan-menu ul {
+        list-style-type: none;
+    }
+    .plan-menu ul li {
+        display: block;
+        margin-left: 0px !important;
+    }
+    .menu .plan-menu {
+        line-height: 28px !important;
+    }
+    .menu .menu-item a {
+        padding: 10px 11px;
+        font-size: 15px;
+        display: block;
+        color: #fff !important;
+        text-decoration: none;
+    }
+    .plan-menu ul li a span {
+        padding: 3px 0px !important;
+        margin-left: 8px !important;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px !important;
+        line-height: 20px;
+        color: #fff;
+    }
+    .plan-menu ul li.new:before {
+        color: #E5E5E5;
+        content: "";
+        padding-right: 0;
+        position: relative;
+        left: -3px;
+        margin-left: 0px;
+    }
+    .plan-menu ul li.borders {
+        border: none !important;
+        padding: 0;
+        margin: 0;
+        width: 130px;
+        margin-left: 0px !important;
+    }
+    .top-part input {
+        position: relative;
+        width: 275px;
+        height: 25px;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #393939;
+        padding-left: 15px;
+    }
+    .upload-button {
+        position: absolute;
+        width: 65px;
+        height: 25px;
+        border: none;
+        background: #213962;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 12px;
+        color: #FFFFFF;
+        right: 40px;
+        padding: 0px;
+        top: 48px;
+    }
+    .bulk-input-icons textarea {
+        width: 275px;
+        height: 78px;
+        border: 0;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        padding: 5px 30px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #393939;
+    }
+    .bulk-input-icons i {
+        position: absolute;
+        left: 0px;
+        top: 8px;
+        padding: 0px 8px;
+        font-size: 15px;
+        color: gray;
+    }
+    .bulk-validation-right {
+        width: 100%;
+        height: 510px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+    #exportDIV {
+        position: absolute;
+        width: 67px;
+        height: 58px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.08);
+        right: 45px;
+        top: 68px;
+        font-family: 'Nunito';
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    .upload-button {
+        position: absolute;
+        width: 65px;
+        height: 25px;
+        border: none;
+        background: #213962;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 12px;
+        color: #FFFFFF;
+        right: 55px;
+        padding: 0px;
+        top: 48px;
+    }
+    .total-email h6, .total-valid-email h6, .total-invalid-email h6, .total-catch-email h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        color: #213962;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .menu .menu-item {
+        padding: 0px 0px 10px 0px;
+    }
+    .menu .menu-item a {
+        padding: 10px 25px;
+        font-size: 15px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    .user-img {
+        margin-left: 10px;
+    }
+    .user-name {
+        color: #fff;
+    }
+    .header-box {
+        height: 47px;
+        width: 100%;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    .header-box h6 {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    .header-box h6 span {
+        display: block;
+        font-size: 11px;
+        color: rgba(57, 57, 57, 1);
+        font-weight: 400;
+        margin-top: 2px;
+    }
+    .plan-menu {
+        z-index: 999999;
+    }
+    .plan-menu ul {
+        list-style-type: none;
+    }
+    .plan-menu ul li {
+        display: block;
+        margin-left: 0px !important;
+    }
+    .menu .plan-menu {
+        line-height: 28px !important;
+    }
+    .menu .menu-item a {
+        padding: 10px 11px;
+        font-size: 15px;
+        display: block;
+        color: #fff !important;
+        text-decoration: none;
+    }
+    .plan-menu ul li a span {
+        padding: 3px 0px !important;
+        margin-left: 8px !important;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px !important;
+        line-height: 20px;
+        color: #fff;
+    }
+    .plan-menu ul li.new:before {
+        color: #E5E5E5;
+        content: "";
+        padding-right: 0;
+        position: relative;
+        left: -3px;
+        margin-left: 0px;
+    }
+    .plan-menu ul li.borders {
+        border: none !important;
+        padding: 0;
+        margin: 0;
+        width: 130px;
+        margin-left: 0px !important;
+    }
+    .bulk-validation-right {
+        width: 100%;
+        height: 510px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+    .total-email h6, .total-valid-email h6, .total-invalid-email h6, .total-catch-email h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        color: #213962;
+    }
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo img {
+        width: 120px;
+        height: 45px;
+    }
+    .menu ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+        color: #000;
+    }
+    .menu .menu-item a span {
+        margin-left: 5px;
+    }
+    .menu ul li:last-child {
+        margin-left: 0px !important;
+    }
+
+    .bulk-validation-top {
+        width: 100%;
+        height: 228px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
+        border-radius: 7px;
+        padding: 20px 10px;
+    }
+    .top-part input {
+        position: relative;
+        width: 250px;
+        height: 25px;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #393939;
+        padding-left: 10px;
+    }
+    .upload-button {
+        position: absolute;
+        width: 70px;
+        height: 26px;
+        border: none;
+        background: #213962;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        color: #FFFFFF;
+        right: 25px;
+        padding: 0px;
+    }
+    .bulk-input-icons textarea {
+        width: 250px;
+        height: 78px;
+        border: 0;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        padding: 2px 30px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #393939;
+    }
+    .bulk-input-icons i {
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        padding: 0px 9px;
+        font-size: 15px;
+        color: gray;
+    }
+    .borderless td, .borderless th {
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(79, 75, 75, 1);
+        padding: 0px 0px;
+        font-size: 10px;
+    }
+    .total-email h6, .total-valid-email h6, .total-invalid-email h6, .total-catch-email h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        color: #213962;
+    }
+}
+
+/* Iphone Layout: 414. */
+
+@media only screen and (min-width:414px) and (max-width: 736px) {
+    .bulk-validation-right {
+        width: 100%;
+        height: 510px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+    .total-email h6, .total-valid-email h6, .total-invalid-email h6, .total-catch-email h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        color: #213962;
+    }
+}
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}

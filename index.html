@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bulk Validation</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!-- Navigation Area Start Here -->
+    <section class="navigation-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="image/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="menu">
+                        <input type="checkbox" id="menu-btn" class="menu-btn">
+                        <label class="menu-icon" for="menu-btn">
+                            <span class="nav-icon"></span>
+                        </label>
+                        <ul class="menu-item">
+                            <li><a href="#"><i class="fa fa-envelope"></i><span>Email
+                                        Verification</span></a></li>
+                            <li><a href="#"><i class="fa fa-credit-card"></i><span>Subscription</span></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-user-plus"></i><span>Referral</span></a></li>
+                            <li><img class="user-img" src="image/user.png" alt="" srcset=""><span class="user-name"
+                                    style="margin-left: 10px;">Sakib...</span><span
+                                    style="margin-left: 15px; color: aqua; font-size: 20px;"><i onclick="myFunction()"
+                                        class="fa fa-caret-down dropbtn"></i>
+                                    <div id="myDIV" class="dropdown-content">
+                                        <div class="header-box">
+                                            <h6>PRO PLAN <span class="plan">1000 Varification / Month</span></h6>
+                                        </div>
+                                        <div class="plan-menu">
+                                            <ul>
+                                                <li class="new"><a href="#"><img src="image/personal.png"><span>Personal
+                                                            Setting</span></a></li>
+                                                <li class="borders"></li>
+                                                <li class="new"><a href="#"><img src="image/team.png"><span>Team
+                                                            Setting</span></a></li>
+                                                <li class="borders"></li>
+                                                <li><a href="#"><img src="image/work.png"><span>Workspace
+                                                            Setting</span></a></li>
+                                                <li class="borders"></li>
+                                                <li class="new"><a href="#"><img src="image/hand.png"><span>Referral
+                                                            Payout</span></a></li>
+                                                <li class="borders"></li>
+                                                <li><a href="#"><img src="image/logout.png"><span>Logout</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- navigation Area End Here -->
+    <!-- Header Part Start Here -->
+    <section class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <ul>
+                        <li><a href="#">Single validation</a></li>
+                        <li><a href="#">Bulk validation</a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-- Header Part End Here -->
+    <!-- Validation Part End Here -->
+
+    <section class="bulk-validation-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="bulk-validation-top">
+                        <h5>Bulk Emails Validation</h5>
+                        <div class="top-part">
+                            <input type="text" placeholder="Type campaign name" />
+                            <button class="upload-button">UPLOAD CSV</button>
+                        </div>
+                        <div class="bulk-input-icons">
+                            <textarea name="" id="" cols="50" rows="4" placeholder="Type your email.."></textarea>
+                            <i class="fa fa-envelope"></i>
+        
+                        </div>
+                        <div class="bulk-verify">
+                            <button class="bulk-verify-btn">VERIFY</button>
+                        </div>
+                    </div>
+                    <div class="bulk-validation-bottom">
+                        <h5>Validation Reports</h5>
+                        <div class="table-area">
+                            <table class="table borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col-5">FILE NAME</th>
+                                        <th scope="col-5" style="text-align:center">REPORT</th>
+                                        <th scope="col-2" style="text-align:center; padding-left: 50px">EXPORT</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>main file 1.csv</td>
+                                        <td style="text-align:center"><button class="report-btn">VIEW</button></td>
+                                        <td style="text-align:right">
+                                            <button class="csv-btn">CSV</button>
+                                            <button class="excel-btn">EXCEL</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>main file 1.csv</td>
+                                        <td style="text-align:center"><button class="report-btn">VIEW</button></td>
+                                        <td style="text-align:right">
+                                            <button class="csv-btn">CSV</button>
+                                            <button class="excel-btn">EXCEL</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    
+                                        <td>main file 1.csv email</td>
+                                        <td style="text-align:center"><button class="report-btn">VIEW</button></td>
+                                        <td style="text-align:right">
+                                            <button class="csv-btn">CSV</button>
+                                            <button class="excel-btn">EXCEL</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    
+                                        <td>sakib email csv file 1 </td>
+                                        <td style="text-align:center"><button class="report-btn active">VIEW</button></td>
+                                        <td style="text-align:right">
+                                            <button class="csv-btn active">CSV</button>
+                                            <button class="excel-btn active">EXCEL</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pagination">
+                            <div class="pagination-count">
+                                <h6>Page 1 of 6</h6>
+                            </div>
+                            <div class="pagination-button">
+                                <button class="previous-btn">Previous</button>
+                                <button class="next-btn active">Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="bulk-validation-right">
+                        <div class="bulk-validation-right-top">
+                            <h5>Bulk Validation Report</h5>
+                            <div style="margin-top: 30px;">
+                                <div class="piechart">
+                                    <div class="layer"></div>
+                                    <div class="layer"></div>
+                                    <div class="layer"></div>
+                                    <div class="short-logo">
+                                        <img src="image/shortlogo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="validation-right-middle">
+                            <h6>Main File 1</h6>
+                        </div>
+                        <div class="validation-right-bottom">
+                            <div class="row mt-1 total-email">
+                                <div class="col-md-5 col-7 offset-md-1 text-right">
+                                    <h6>Total Email:</h6>
+                                </div>
+                                <div class="col-md-2 col-2 offset-md-1">
+                                    <h6>1000</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-1 total-valid-email">
+                                <div class="col-md-5 col-7 offset-md-1 text-right">
+                                    <h6>Valid Email:</h6>
+                                </div>
+                                <div class="col-md-2 col-2 offset-md-1">
+                                    <h6>500</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-1 total-invalid-email">
+                                <div class="col-md-5 col-7 offset-md-1 text-right">
+                                    <h6>Invalid Email:</h6>
+                                </div>
+                                <div class="col-md-2 col-2 offset-md-1">
+                                    <h6>300</h6>
+                                </div>
+                               
+                            </div>
+                            <div class="row mt-1 total-catch-email">
+                                <div class="col-md-5 col-7 offset-md-1 text-right">
+                                    <h6>Catch All Email:</h6>
+                                </div>
+                                <div class="col-md-2 col-2 offset-md-1">
+                                    <h6>800</h6>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Validation Part End Here -->
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDIV").classList.toggle("show");
+        }
+
+
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

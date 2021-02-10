@@ -1,0 +1,721 @@
+/* Base CSS */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fix {
+    overflow: hidden
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+} */
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto';
+    background: #EDEDED;
+}
+
+.test {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+/* Navigation Area Start Here */
+
+.navigation-area {
+    width: 100%;
+    height: 56px;
+    background: #fff;
+}
+
+.navigation-area .logo {
+    height: 45px;
+    width: 200px;
+}
+
+.menu {
+    position: relative;
+    z-index: 999999999;
+    top: 0;
+    left: -15px;
+    width: 112%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu .menu-item a {
+    padding: 15px 25px;
+    font-size: 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu .menu-item {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.menu .menu-item a span {
+    margin-left: 15px;
+}
+
+.menu .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: -30px;
+    right: 45px;
+}
+
+.menu .nav-icon {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #000;
+    transition: background .2s ease-out;
+}
+
+.menu .menu-icon .nav-icon::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    top: 7px;
+    transition: all .2s ease-out;
+}
+
+.menu .menu-icon .nav-icon::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    top: -7px;
+    transition: all .2s ease-out;
+}
+
+.menu .menu-btn {
+    display: none;
+}
+
+.menu .menu-btn:checked~.menu-item {
+    width: 100%;
+    max-height: 800px;
+    background-color: #345997;
+    position: relative;
+    top: 11px;
+}
+
+.menu .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.menu .menu-btn:checked~.menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu .menu-btn:checked~.menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media only screen and (min-width:768px) {
+    .navigation-area .logo {
+        height: 45px;
+        width: 200px;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu .menu-item a {
+        all: unset;
+        color: #000;
+    }
+    .menu .menu-item {
+        all: unset;
+        height: 56px;
+        line-height: 56px;
+    }
+    .menu ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 50px;
+        cursor: pointer;
+        color: #000;
+    }
+    .menu ul li:first-child {
+        margin-left: 0px;
+    }
+    .menu ul li:last-child {
+        margin-left: 200px;
+    }
+    .menu ul li a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #000;
+        cursor: pointer;
+    }
+    .menu ul li a i {
+        color: gray;
+        font-size: 18px;
+    }
+    .menu ul li a span {
+        margin-left: 8px;
+    }
+    .menu .menu-item a:hover {
+        background: transparent;
+    }
+    .menu .menu-icon {
+        display: none;
+    }
+    .menu .menu-item img {
+        vertical-align: middle;
+        margin-top: -5px;
+    }
+    #myDIV {
+        position: absolute;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
+        height: 205px;
+        width: 180px;
+        font-family: 'Nunito';
+        border-radius: 0px 0px 5px 5px;
+    }
+    #exportDIV {
+        position: absolute;
+        width: 67px;
+        height: 58px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.08);
+        right: 45px;
+        top: 40px;
+        font-family: 'Nunito';
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.header-box {
+    height: 47px;
+    width: 180px;
+    background: #0FD4AC;
+}
+
+.header-box h6 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+}
+
+.header-box h6 span {
+    display: block;
+    font-size: 11px;
+    color: #393939;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.plan-menu {
+    z-index: 999999;
+}
+
+.plan-menu ul {
+    list-style-type: none;
+    width: 180px;
+}
+
+.plan-menu ul li {
+    display: block;
+    margin-left: 10px !important;
+}
+
+.menu .plan-menu {
+    line-height: 28px !important;
+}
+
+.plan-menu ul li.new:before {
+    color: #E5E5E5;
+    content: "";
+    padding-right: 0;
+    position: relative;
+    left: -3px;
+    margin-left: 0px;
+}
+
+.plan-menu ul li.borders {
+    border-bottom: 3px solid #E5E5E5;
+    border-radius: 7px;
+    padding: 0;
+    margin: 0;
+    width: 130px;
+    margin-left: 35px !important;
+}
+
+.plan-menu ul li a span {
+    padding: 2px 0px !important;
+    margin-left: 8px !important;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px !important;
+    line-height: 20px;
+    color: #393939;
+}
+
+/* Navigation Area End Here */
+
+/* Header Area Start Here */
+
+.header-area {
+    width: 100%;
+    height: 52px;
+    background-color: rgba(52, 89, 151, 1);
+    line-height: 52px;
+}
+
+.header-area ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-area ul li {
+    display: inline-block;
+    border-right: 3px solid #C9DDFF;
+    padding: 0px 20px;
+}
+
+.header-area ul li a {
+    text-decoration: none;
+    color: #C9DDFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.header-area ul li:first-child {
+    padding-left: 0px;
+}
+
+.header-area ul li:last-child {
+    padding-right: 0px;
+    border-right: none;
+}
+
+/* Header Area End Here */
+
+.bulk-validation-area {
+    margin-top: 75px;
+    padding-bottom: 50px;
+}
+
+.bulk-validation-top {
+    width: 100%;
+    height: 228px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    padding: 20px 30px;
+}
+
+.bulk-validation-top h5 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #474747;
+}
+
+.top-part input {
+    position: relative;
+    width: 377px;
+    height: 25px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #393939;
+    padding-left: 15px;
+}
+
+.top-part input:focus {
+    outline: 1px solid #0FD4AC;
+}
+
+.upload-button {
+    position: absolute;
+    width: 77px;
+    height: 25px;
+    border: none;
+    background: #213962;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+    right: 53px;
+    padding: 0px;
+}
+
+.bulk-button:focus {
+    outline: none;
+}
+
+.bulk-input-icons {
+    position: relative;
+    margin-top: 10px;
+}
+
+.bulk-input-icons textarea {
+    width: 377px;
+    height: 78px;
+    border: 0;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    padding: 5px 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #393939;
+}
+
+.bulk-input-icons i {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: gray;
+}
+
+.bulk-input-icons textarea:focus {
+    outline: none;
+    border-color: #40bdee;
+}
+
+.bulk-verify {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bulk-verify-btn {
+    display: inline-block;
+    width: 84px;
+    height: 30px;
+    background: #0FD4AC;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.bulk-verify-btn:focus {
+    outline: none;
+}
+
+.bulk-verify-btn:hover {
+    background-color: #345997;
+    color: #fff;
+}
+
+.bulk-validation-bottom {
+    width: 100%;
+    height: 252px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    margin-top: 30px;
+    padding: 20px 30px;
+}
+
+.bulk-validation-bottom h5 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #474747;
+}
+
+.table-area {
+    width: 100%;
+    height: 160px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.table thead tr th {
+    border: none !important;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05) !important;
+    font-size: 10px !important;
+    color: #989696;
+}
+
+.borderless td, .borderless th {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(79, 75, 75, 1);
+    padding: 3px 0px;
+}
+
+.report-btn, .csv-btn, .excel-btn {
+    border: none;
+    background: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    color: #666C72;
+}
+
+.pagination {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-button {
+    text-align: right;
+}
+
+.pagination-count h6 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #666C72;
+}
+
+.previous-btn, .next-btn {
+    border: none;
+    background: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666C72;
+}
+
+.previous-btn:hover, .next-btn:hover, .active, .report-btn:hover, .excel-btn:hover, .csv-btn:hover {
+    color: #0FD4AC;
+}
+
+.bulk-validation-right {
+    width: 100%;
+    height: 510px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 20px 30px
+}
+
+.bulk-validation-right-top h5 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #474747;
+}
+
+.validation-right-top h6 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.piechart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 35px 0px;
+}
+
+.piechart:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    bottom: 35px;
+    right: 35px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0px 100px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.layer::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    transform-origin: 0px 100px;
+    top: 0;
+    left: 0;
+}
+
+.layer:nth-child(1) {
+    background-color: #F8BB7E;
+    border: 1px solid #fff;
+    transform: translateX(100px) rotate(180deg);
+}
+
+.layer:nth-child(1)::before {
+    content: "25%";
+    color: #fff;
+    padding: 10px 0px;
+    transform: rotate(120deg);
+}
+
+.layer:nth-child(2) {
+    background-color: #DD8FA3;
+    border: 1px solid #fff;
+    transform: translateX(99px) rotate(91deg);
+}
+
+.layer:nth-child(2)::before {
+    content: "25%";
+    color: #fff;
+    padding: 10px 0px;
+    transform: rotate(130deg);
+}
+
+.layer:nth-child(3) {
+    background-color: #AFE3E2;
+    border: 1px solid #fff;
+    transform: translateX(99px) rotate(0deg);
+}
+
+.layer:nth-child(3)::before {
+    content: "50%";
+    color: #fff;
+    padding: 10px 0px;
+    transform: rotate(90deg);
+}
+
+.short-logo img {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 999;
+}
+
+.validation-right-middle h6 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #474747;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.total-email h6, .total-valid-email h6, .total-invalid-email h6, .total-catch-email h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #213962;
+}
+
+.total-valid-email h6 {
+    color: #AFE3E2;
+}
+
+.total-invalid-email h6 {
+    color: #DD8FA3;
+}
+
+.total-catch-email h6 {
+    color: #F8BB7E;
+}
+
+/* Bulk Validation Page Style End Here */
