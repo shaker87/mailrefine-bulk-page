@@ -409,7 +409,7 @@ a:hover {
 .upload-button {
     position: absolute;
     width: 77px;
-    height: 25px;
+    height: 26px;
     border: none;
     background: #213962;
     border: 1px solid #E2E2E2;
@@ -424,8 +424,11 @@ a:hover {
     padding: 0px;
 }
 
-.bulk-button:focus {
+.upload-button:focus {
     outline: none;
+}
+.upload-button:hover{
+    background: #0FD4AC;
 }
 
 .bulk-input-icons {
