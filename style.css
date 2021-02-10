@@ -473,6 +473,7 @@ a:hover {
     display: inline-block;
     width: 84px;
     height: 30px;
+    line-height: 30px;
     background: #0FD4AC;
     border-radius: 20px;
     border: none;
