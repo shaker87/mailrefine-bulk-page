@@ -528,7 +528,7 @@ a:hover {
     font-family: 'Nunito';
     font-weight: 400;
     font-size: 14px;
-    color: rgba(79, 75, 75, 1);
+    color: #393939;
     padding: 3px 0px;
 }
 
@@ -711,7 +711,7 @@ a:hover {
 }
 
 .total-valid-email h6 {
-    color: #AFE3E2;
+    color: #2ecc71;
 }
 
 .total-invalid-email h6 {

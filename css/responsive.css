@@ -155,6 +155,27 @@
         font-family: 'Nunito';
         border-radius: 0px 0px 5px 5px;
     }
+
+    .total-email h6, .total-valid-email h6, .total-invalid-email h6, .total-catch-email h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #213962;
+    }
+    
+    .total-valid-email h6 {
+        color: #2ecc71;
+    }
+    
+    .total-invalid-email h6 {
+        color: #DD8FA3;
+    }
+    
+    .total-catch-email h6 {
+        color: #F8BB7E;
+    }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {
@@ -180,9 +201,21 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 19px;
         color: #213962;
+    }
+    
+    .total-valid-email h6 {
+        color: #2ecc71;
+    }
+    
+    .total-invalid-email h6 {
+        color: #DD8FA3;
+    }
+    
+    .total-catch-email h6 {
+        color: #F8BB7E;
     }
 }
 
@@ -282,9 +315,21 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 19px;
         color: #213962;
+    }
+    
+    .total-valid-email h6 {
+        color: #2ecc71;
+    }
+    
+    .total-invalid-email h6 {
+        color: #DD8FA3;
+    }
+    
+    .total-catch-email h6 {
+        color: #F8BB7E;
     }
 }
 
@@ -385,6 +430,18 @@
         line-height: 19px;
         color: #213962;
     }
+    
+    .total-valid-email h6 {
+        color: #2ecc71;
+    }
+    
+    .total-invalid-email h6 {
+        color: #DD8FA3;
+    }
+    
+    .total-catch-email h6 {
+        color: #F8BB7E;
+    }
 }
 
 /* Iphone Layout: 414. */
@@ -399,13 +456,70 @@
         padding: 20px 30px;
         margin-top: 30px;
     }
+    .top-part input {
+        position: relative;
+        width: 325px;
+        height: 25px;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #393939;
+        padding-left: 15px;
+    }
+    .upload-button {
+        position: absolute;
+        width: 65px;
+        height: 25px;
+        border: none;
+        background: #213962;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 12px;
+        color: #FFFFFF;
+        right: 45px;
+        padding: 0px;
+        top: 48px;
+    }
+    .bulk-input-icons textarea {
+        width: 325px;
+        height: 78px;
+        border: 0;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        padding: 5px 30px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #393939;
+    }
     .total-email h6, .total-valid-email h6, .total-invalid-email h6, .total-catch-email h6 {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 19px;
         color: #213962;
+    }
+    
+    .total-valid-email h6 {
+        color: #2ecc71;
+    }
+    
+    .total-invalid-email h6 {
+        color: #DD8FA3;
+    }
+    
+    .total-catch-email h6 {
+        color: #F8BB7E;
     }
 }
 
