@@ -389,7 +389,7 @@ a:hover {
 
 .top-part input {
     position: relative;
-    width: 377px;
+    width: 100%;
     height: 25px;
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
@@ -420,7 +420,7 @@ a:hover {
     font-size: 10px;
     line-height: 12px;
     color: #FFFFFF;
-    right: 53px;
+    right: 45px;
     padding: 0px;
 }
 
@@ -437,7 +437,7 @@ a:hover {
 }
 
 .bulk-input-icons textarea {
-    width: 377px;
+    width: 100%;
     height: 78px;
     border: 0;
     border: 1px solid #E5E5E5;
